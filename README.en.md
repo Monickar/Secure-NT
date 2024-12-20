@@ -1,10 +1,14 @@
 
-<!-- ![image](relaxloss.jpg) -->
+
 # Network Topology Protection Framework
+
+<img src="SecureNT.png" alt="drawing" width="800"/>
 
 This repository contains the implementation for this [Paper](https://arxiv.org/abs/2412.08177).
 
 Contact: Chengze Du ([ducz0338@dupt.edu.cn](ducz0338@bupt.edu.cn))
+<!-- ![image](SecureNT.png) -->
+
 
 ## Structure
 
