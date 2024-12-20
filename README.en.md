@@ -2,7 +2,7 @@
 <!-- ![image](relaxloss.jpg) -->
 # Network Topology Protection Framework
 
-This repository contains the implementation for ["SecureNT: A Practical Framework for Efficient Topology Protection and Monitoring"](https://arxiv.org/abs/2412.08177).
+This repository contains the implementation for this [Paper](https://arxiv.org/abs/2412.08177).
 
 Contact: Chengze Du ([ducz0338@dupt.edu.cn](ducz0338@bupt.edu.cn))
 
