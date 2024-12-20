@@ -1,36 +1,65 @@
-# SecureNT
 
-#### Description
-{**When you're done, you can delete the content in this README and update the file with details for others getting started with your repository**}
+<!-- ![image](relaxloss.jpg) -->
+# Network Topology Protection Framework
 
-#### Software Architecture
-Software architecture description
+This repository contains the implementation for ["SecureNT: A Practical Framework for Efficient Topology Protection and Monitoring"](https://arxiv.org/abs/2412.08177).
 
-#### Installation
+Contact: Chengze Du ([ducz0338@dupt.edu.cn](ducz0338@bupt.edu.cn))
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+## Structure
 
-#### Instructions
+```
+.
+├── algorithm_infer_tp/      # Topology inference algorithms
+│   ├── MLE.py              # Maximum Likelihood Estimation
+│   └── MLTP.py             # MCMC-based Topology Learning
+├── algorithm_obf_tp/        # Topology protection algorithms
+│   ├── AntiTomo.py         # Anti-tomography protection
+│   ├── Proto.py            # Prototype-based protection
+│   └── SecureNT.py         # Secure Network Topology protection
+├── Alg_NTP_evaluate.py     # Network Tomography link performance evaluate after Topology Protection
+```
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+## Topology Inference Algorithms
 
-#### Contribution
-
-1.  Fork the repository
-2.  Create Feat_xxx branch
-3.  Commit your code
-4.  Create Pull Request
+### MLE (Maximum Likelihood Estimation)
+- Implements topology inference using maximum likelihood estimation
+- Uses Gurobi optimizer for solving the optimization problem
 
 
-#### Gitee Feature
+### MLTP (MCMC-based Topology Learning)
+- Implements topology inference using Markov Chain Monte Carlo
 
-1.  You can use Readme\_XXX.md to support different languages, such as Readme\_en.md, Readme\_zh.md
-2.  Gitee blog [blog.gitee.com](https://blog.gitee.com)
-3.  Explore open source project [https://gitee.com/explore](https://gitee.com/explore)
-4.  The most valuable open source project [GVP](https://gitee.com/gvp)
-5.  The manual of Gitee [https://gitee.com/help](https://gitee.com/help)
-6.  The most popular members  [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+
+## Topology Protection Algorithms
+- AntiTomo
+- Proto
+- SecureNT
+
+
+## Requirements
+
+- Python 3.7+
+- NumPy
+- NetworkX
+- Gurobi Optimizer
+- Matplotlib
+- SciPy
+
+## Usage
+
+Each algorithm can be used independently or as part of the complete framework. Example usage:
+
+```python
+# Topology Inference
+from algorithm_infer_tp.MLE import MLE
+from algorithm_infer_tp.MLTP import TopologyIdentification
+
+# Topology Protection
+from algorithm_obf_tp.AntiTomo import AntiTomoTopologyObfuscation
+from algorithm_obf_tp.Proto import TopologyObfuscation
+```
+
+## License
+
+[MIT License](LICENSE)
